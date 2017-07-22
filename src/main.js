@@ -4,7 +4,7 @@ import Vue from 'vue'
 import FastClick from 'fastclick'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
-import Vuex from 'Vuex'
+import Vuex from 'vuex'
 import moment from 'moment'
 import config from './config'
 import App from './App'
@@ -55,6 +55,11 @@ Vue.http.interceptors.push((request, next) => {
 FastClick.attach(document.body)
 
 Vue.config.productionTip = false
+
+// 加载jquery
+/* var jquery = require('jquery')
+require('signalr')
+Vue.prototype.$ = jquery */
 
 /* eslint-disable no-new */
 var vm = new Vue({

@@ -12,7 +12,8 @@
 
 <script>
 import { Group, Cell } from 'vux'
-
+// import 'expose-loader?jQuery!jquery'
+// import '../node_modules/signalr/jquery.signalR.js'
 export default {
   components: {
     'group': Group,
@@ -25,6 +26,12 @@ export default {
       // preserves its current state and we are modifying
       // its initial state.
       msg: 'Hello World!'
+    }
+  },
+  created () {
+  },
+  methods: {
+    tx () {
     }
   }
 }
