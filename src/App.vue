@@ -12,6 +12,8 @@ export default {
 
 <style lang="less">
 @import '~vux/src/styles/reset.less';
+@import './theame/theame.css';
+@import './assets/iconfont.css';
 
 body {
   background-color: #fbf9fe;
