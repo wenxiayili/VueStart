@@ -66,14 +66,14 @@ let webpackConfig = {
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
       },
-      {
+     /*  {
         test: /\.css/,
         loader: 'style!css!less',
         include: [resolve('src/theame')],
         options: {
-          name: [name]
+          name: '[name]'
         }
-      }
+      } */
     ]
   }
 }

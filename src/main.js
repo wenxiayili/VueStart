@@ -8,7 +8,6 @@ import Vuex from 'vuex'
 import moment from 'moment'
 import config from './config'
 import App from './App'
-import Home from './components/HelloFromVux'
 
 Vue.use(VueRouter)
 Vue.use(VueResource)
@@ -16,11 +15,10 @@ Vue.use(Vuex)
 Vue.prototype.$moment = moment
 
 // vue-route
-const routes = [{
-  path: '/',
-  component: Home
-}]
-
+const routes = [
+  {path: '/test', component: (r) => { require(['./SignalR/Test.vue'], r) }},
+  {path: '/jq_test', component: (r) => { require(['./SignalR/test2.vue'], r) }}
+]
 const router = new VueRouter({
   routes
 })
